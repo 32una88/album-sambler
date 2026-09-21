@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -34,19 +33,9 @@ color:var(--fg);
 font-family:Arial,Helvetica,sans-serif;
 }
 
-a{
-color:inherit;
-text-decoration:none;
-}
-
-button{
-font:inherit;
-}
-
-img{
-display:block;
-max-width:100%;
-}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+img{display:block;max-width:100%}
 
 .container{
 width:min(1120px,92%);
@@ -75,9 +64,7 @@ font-weight:900;
 letter-spacing:.18em;
 }
 
-.logo span{
-color:var(--pink);
-}
+.logo span{color:var(--pink)}
 
 .navlinks{
 display:flex;
@@ -87,9 +74,7 @@ letter-spacing:.08em;
 color:var(--muted);
 }
 
-.navlinks a:hover{
-color:white;
-}
+.navlinks a:hover{color:white}
 
 .hero{
 min-height:100vh;
@@ -153,9 +138,7 @@ letter-spacing:-.07em;
 text-transform:uppercase;
 }
 
-.hero-copy h1 span{
-color:var(--pink);
-}
+.hero-copy h1 span{color:var(--pink)}
 
 .hero-copy p{
 max-width:500px;
@@ -185,9 +168,7 @@ letter-spacing:.1em;
 text-transform:uppercase;
 }
 
-.btn:hover{
-border-color:var(--pink);
-}
+.btn:hover{border-color:var(--pink)}
 
 .btn.primary{
 background:var(--pink);
@@ -250,13 +231,8 @@ background:var(--card);
 border-bottom:1px solid var(--line);
 }
 
-.track:last-child{
-border-bottom:0;
-}
-
-.track:hover{
-background:#171720;
-}
+.track:last-child{border-bottom:0}
+.track:hover{background:#171720}
 
 .track-number{
 color:var(--muted);
@@ -303,9 +279,7 @@ transform:translateY(110%);
 transition:.25s;
 }
 
-.player.active{
-transform:translateY(0);
-}
+.player.active{transform:translateY(0)}
 
 .player-inner{
 width:min(1120px,100%);
@@ -397,9 +371,7 @@ text-shadow:
 
 @media(max-width:760px){
 
-.navlinks{
-display:none;
-}
+.navlinks{display:none}
 
 .hero{
 grid-template-columns:1fr;
@@ -407,9 +379,7 @@ gap:35px;
 padding-top:100px;
 }
 
-.hero-copy h1{
-font-size:60px;
-}
+.hero-copy h1{font-size:60px}
 
 .about{
 grid-template-columns:1fr;
@@ -427,22 +397,17 @@ gap:10px;
 padding:16px 12px;
 }
 
-section{
-padding:70px 0;
-}
+section{padding:70px 0}
 
 .player-inner{
 grid-template-columns:1fr;
 gap:8px;
 }
 
-.player .btn{
-display:none;
-}
+.player .btn{display:none}
 
 }
 </style>
-
 </head>
 
 <body>
@@ -470,21 +435,18 @@ display:none;
 <div class="cover">
 
 <img
-src="ARTE%20AI%20TUDO%20COMEÇA%20NO%20ABANDONO%20SITE.png"
+src="ARTE%20AI%20TUDO%20COME%C3%87A%20NO%20ABANDONO%20SITE.png"
 alt="Sambler — Tudo começa pelo Abandono"
 onerror="this.style.display='none';document.getElementById('coverFallback').style.display='flex'"
-
 >
 
 <div class="cover-fallback" id="coverFallback">
-
 <strong>
 TUDO<br>
 COMEÇA<br>
 PELO<br>
 ABANDONO
 </strong>
-
 </div>
 
 </div>
@@ -573,129 +535,75 @@ forma de começar.
 <div class="tracks">
 
 <div class="track">
-
 <div class="track-number">01</div>
-
 <div>
 <div class="track-title">Abandono</div>
 <div class="track-meta">SAMBLER</div>
 </div>
-
-<button
-class="play"
+<button class="play"
 data-title="Abandono"
 data-file="Sambler%20-%20Abandono.mp3"
-aria-label="Ouvir Abandono"
-
->
-
-▶ </button>
-
+aria-label="Ouvir Abandono">▶</button>
 </div>
 
 <div class="track">
-
 <div class="track-number">02</div>
-
 <div>
 <div class="track-title">Amores</div>
 <div class="track-meta">SAMBLER</div>
 </div>
-
-<button
-class="play"
+<button class="play"
 data-title="Amores"
 data-file="Sambler%20-%20Amores.mp3"
-aria-label="Ouvir Amores"
-
->
-
-▶ </button>
-
+aria-label="Ouvir Amores">▶</button>
 </div>
 
 <div class="track">
-
 <div class="track-number">03</div>
-
 <div>
 <div class="track-title">Aliada com o Tempo</div>
 <div class="track-meta">SAMBLER</div>
 </div>
-
-<button
-class="play"
+<button class="play"
 data-title="Aliada com o Tempo"
 data-file="Sambler%20-%20Aliada%20com%20o%20tempo.mp3"
-aria-label="Ouvir Aliada com o Tempo"
-
->
-
-▶ </button>
-
+aria-label="Ouvir Aliada com o Tempo">▶</button>
 </div>
 
 <div class="track">
-
 <div class="track-number">04</div>
-
 <div>
 <div class="track-title">Hahahah</div>
 <div class="track-meta">SAMBLER</div>
 </div>
-
-<button
-class="play"
+<button class="play"
 data-title="Hahahah"
 data-file="Sambler%20-%20Hahahah.mp3"
-aria-label="Ouvir Hahahah"
-
->
-
-▶ </button>
-
+aria-label="Ouvir Hahahah">▶</button>
 </div>
 
 <div class="track">
-
 <div class="track-number">05</div>
-
 <div>
 <div class="track-title">Pode Atirar</div>
 <div class="track-meta">Tentaram Me Matar</div>
 </div>
-
-<button
-class="play"
+<button class="play"
 data-title="Pode Atirar — Tentaram Me Matar"
 data-file="sambler%20-%20pode%20atirar%20tentaram%20me%20matar%20.mp3"
-aria-label="Ouvir Pode Atirar"
-
->
-
-▶ </button>
-
+aria-label="Ouvir Pode Atirar">▶</button>
 </div>
 
 <div class="track">
-
 <div class="track-number">06</div>
-
 <div>
 <div class="track-title">Selvagem</div>
 <div class="track-meta">SAMBLER</div>
 </div>
-
-<button
-class="play"
+<button class="play"
 data-title="Selvagem"
 data-file="Sambler%20-%20Selvagem.mp3"
-aria-label="Ouvir Selvagem"
-
->
-
-▶ </button>
-
+aria-label="Ouvir Selvagem">▶</button>
 </div>
 
 </div>
@@ -716,47 +624,29 @@ aria-label="Ouvir Selvagem"
 
 <a
 class="info-card"
-href="ARTE%20AI%20TUDO%20COMEÇA%20NO%20ABANDONO%20SITE.png"
+href="ARTE%20AI%20TUDO%20COME%C3%87A%20NO%20ABANDONO%20SITE.png"
 target="_blank"
-
 >
-
 <strong>ARTE PRINCIPAL</strong>
-
-<span>
-Abrir a arte gráfica principal do projeto.
-</span>
-
+<span>Abrir a arte gráfica principal do projeto.</span>
 </a>
 
 <a
 class="info-card"
 href="https://github.com/32una88/album-sambler"
 target="_blank"
-
 >
-
 <strong>REPOSITÓRIO</strong>
-
-<span>
-Arquivos, versões e materiais do álbum no GitHub.
-</span>
-
+<span>Arquivos, versões e materiais do álbum no GitHub.</span>
 </a>
 
 <a
 class="info-card"
 href="https://github.com/32una88/album-sambler/upload/main"
 target="_blank"
-
 >
-
 <strong>ENVIAR ARQUIVOS</strong>
-
-<span>
-Adicionar novos áudios, artes ou materiais ao projeto.
-</span>
-
+<span>Adicionar novos áudios, artes ou materiais ao projeto.</span>
 </a>
 
 </div>
@@ -814,17 +704,11 @@ Projeto em produção
 </main>
 
 <footer>
-
 <div class="container">
-
 SAMBLER — TUDO COMEÇA PELO ABANDONO
-
 <br><br>
-
 © 2026 1006 PRODUTORA
-
 </div>
-
 </footer>
 
 <div class="player" id="player">
@@ -832,16 +716,9 @@ SAMBLER — TUDO COMEÇA PELO ABANDONO
 <div class="player-inner">
 
 <div>
-
 <div class="player-title" id="playerTitle">—</div>
 
-<audio
-id="audio"
-controls
-preload="none"
-
-> </audio>
-
+<audio id="audio" controls preload="none"></audio>
 </div>
 
 <button class="btn" id="closePlayer">
@@ -867,7 +744,6 @@ const file=button.dataset.file;
 const name=button.dataset.title;
 
 title.textContent=name;
-
 audio.src=file;
 
 player.classList.add("active");
@@ -888,9 +764,7 @@ player.classList.remove("active");
 });
 
 audio.addEventListener("ended",()=>{
-
 player.classList.remove("active");
-
 });
 
 </script>
