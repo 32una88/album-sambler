@@ -5,8 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SAMBLER — Tudo começa pelo Abandono</title>
-<meta name="description" content="SAMBLER — Tudo começa pelo Abandono. Música, arte, previews e materiais do álbum.">
-<meta name="theme-color" content="#09090d">
+<meta name="description" content="SAMBLER — Tudo começa pelo Abandono. Álbum, músicas e materiais.">
+<meta name="theme-color" content="#08080c">
 
 <style>
 :root{
@@ -22,9 +22,7 @@
 
 *{box-sizing:border-box}
 
-html{
-scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth}
 
 body{
 margin:0;
@@ -122,7 +120,7 @@ height:100%;
 object-fit:cover;
 }
 
-.cover-placeholder{
+.cover-fallback{
 position:absolute;
 inset:0;
 display:none;
@@ -130,11 +128,10 @@ align-items:center;
 justify-content:center;
 padding:30px;
 text-align:center;
-background:
-linear-gradient(135deg,#17101d,#050508);
+background:linear-gradient(135deg,#17101d,#050508);
 }
 
-.cover-placeholder strong{
+.cover-fallback strong{
 font-size:clamp(40px,7vw,90px);
 line-height:.82;
 letter-spacing:-.07em;
@@ -300,7 +297,7 @@ right:0;
 bottom:0;
 left:0;
 padding:12px 20px;
-background:rgba(8,8,12,.96);
+background:rgba(8,8,12,.97);
 border-top:1px solid var(--line);
 transform:translateY(110%);
 transition:.25s;
@@ -331,13 +328,13 @@ width:100%;
 height:34px;
 }
 
-.assets{
+.info-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:15px;
 }
 
-.asset{
+.info-card{
 min-height:145px;
 padding:24px;
 border:1px solid var(--line);
@@ -345,18 +342,18 @@ background:var(--card);
 transition:.2s;
 }
 
-.asset:hover{
+.info-card:hover{
 transform:translateY(-2px);
 border-color:var(--pink);
 }
 
-.asset strong{
+.info-card strong{
 display:block;
 margin-bottom:10px;
 font-size:13px;
 }
 
-.asset span{
+.info-card span{
 color:var(--muted);
 font-size:12px;
 line-height:1.6;
@@ -419,7 +416,7 @@ grid-template-columns:1fr;
 gap:25px;
 }
 
-.assets,
+.info-grid,
 .credits{
 grid-template-columns:1fr;
 }
@@ -459,7 +456,7 @@ display:none;
 <a href="#album">ÁLBUM</a>
 <a href="#conceito">CONCEITO</a>
 <a href="#faixas">FAIXAS</a>
-<a href="#assets">ASSETS</a>
+<a href="#materiais">MATERIAIS</a>
 <a href="#creditos">CRÉDITOS</a>
 </nav>
 
@@ -473,13 +470,13 @@ display:none;
 <div class="cover">
 
 <img
-src="assets/capa.jpg"
-alt="Capa do álbum Tudo começa pelo Abandono"
+src="ARTE%20AI%20TUDO%20COMEÇA%20NO%20ABANDONO%20SITE.png"
+alt="Sambler — Tudo começa pelo Abandono"
 onerror="this.style.display='none';document.getElementById('coverFallback').style.display='flex'"
 
 >
 
-<div class="cover-placeholder" id="coverFallback">
+<div class="cover-fallback" id="coverFallback">
 
 <strong>
 TUDO<br>
@@ -509,11 +506,11 @@ Desejo, ruptura, raiva, memória, sobrevivência e reconstrução.
 <div class="buttons">
 
 <a class="btn primary" href="#faixas">
-Ouvir faixas
+OUVIR FAIXAS
 </a>
 
 <a class="btn" href="#conceito">
-Conhecer o projeto
+O PROJETO
 </a>
 
 </div>
@@ -581,13 +578,13 @@ forma de começar.
 
 <div>
 <div class="track-title">Abandono</div>
-<div class="track-meta">faixa do álbum</div>
+<div class="track-meta">SAMBLER</div>
 </div>
 
 <button
 class="play"
 data-title="Abandono"
-data-file="audio/abandono.mp3"
+data-file="Sambler%20-%20Abandono.mp3"
 aria-label="Ouvir Abandono"
 
 >
@@ -602,13 +599,13 @@ aria-label="Ouvir Abandono"
 
 <div>
 <div class="track-title">Amores</div>
-<div class="track-meta">faixa do álbum</div>
+<div class="track-meta">SAMBLER</div>
 </div>
 
 <button
 class="play"
 data-title="Amores"
-data-file="audio/amores.mp3"
+data-file="Sambler%20-%20Amores.mp3"
 aria-label="Ouvir Amores"
 
 >
@@ -622,15 +619,15 @@ aria-label="Ouvir Amores"
 <div class="track-number">03</div>
 
 <div>
-<div class="track-title">Aliada</div>
-<div class="track-meta">faixa do álbum</div>
+<div class="track-title">Aliada com o Tempo</div>
+<div class="track-meta">SAMBLER</div>
 </div>
 
 <button
 class="play"
-data-title="Aliada"
-data-file="audio/aliada.mp3"
-aria-label="Ouvir Aliada"
+data-title="Aliada com o Tempo"
+data-file="Sambler%20-%20Aliada%20com%20o%20tempo.mp3"
+aria-label="Ouvir Aliada com o Tempo"
 
 >
 
@@ -644,13 +641,13 @@ aria-label="Ouvir Aliada"
 
 <div>
 <div class="track-title">Hahahah</div>
-<div class="track-meta">faixa do álbum</div>
+<div class="track-meta">SAMBLER</div>
 </div>
 
 <button
 class="play"
 data-title="Hahahah"
-data-file="audio/hahahah.mp3"
+data-file="Sambler%20-%20Hahahah.mp3"
 aria-label="Ouvir Hahahah"
 
 >
@@ -665,13 +662,13 @@ aria-label="Ouvir Hahahah"
 
 <div>
 <div class="track-title">Pode Atirar</div>
-<div class="track-meta">faixa do álbum</div>
+<div class="track-meta">Tentaram Me Matar</div>
 </div>
 
 <button
 class="play"
-data-title="Pode Atirar"
-data-file="audio/pode-atirar.mp3"
+data-title="Pode Atirar — Tentaram Me Matar"
+data-file="sambler%20-%20pode%20atirar%20tentaram%20me%20matar%20.mp3"
 aria-label="Ouvir Pode Atirar"
 
 >
@@ -686,13 +683,13 @@ aria-label="Ouvir Pode Atirar"
 
 <div>
 <div class="track-title">Selvagem</div>
-<div class="track-meta">faixa do álbum</div>
+<div class="track-meta">SAMBLER</div>
 </div>
 
 <button
 class="play"
 data-title="Selvagem"
-data-file="audio/selvagem.mp3"
+data-file="Sambler%20-%20Selvagem.mp3"
 aria-label="Ouvir Selvagem"
 
 >
@@ -707,56 +704,59 @@ aria-label="Ouvir Selvagem"
 
 </section>
 
-<section id="assets">
+<section id="materiais">
 
 <div class="container">
 
-<div class="section-label">03 / materiais</div>
+<div class="section-label">03 / projeto</div>
 
-<h2>Assets</h2>
+<h2>Materiais</h2>
 
-<div class="assets">
+<div class="info-grid">
 
-<a class="asset" href="assets/capa.jpg" target="_blank">
-<strong>CAPA</strong>
+<a
+class="info-card"
+href="ARTE%20AI%20TUDO%20COMEÇA%20NO%20ABANDONO%20SITE.png"
+target="_blank"
+
+>
+
+<strong>ARTE PRINCIPAL</strong>
+
 <span>
-Arte gráfica principal do álbum.
+Abrir a arte gráfica principal do projeto.
 </span>
+
 </a>
 
-<a class="asset" href="assets/contracapa.jpg" target="_blank">
-<strong>CONTRACAPA</strong>
+<a
+class="info-card"
+href="https://github.com/32una88/album-sambler"
+target="_blank"
+
+>
+
+<strong>REPOSITÓRIO</strong>
+
 <span>
-Tracklist e identidade visual.
+Arquivos, versões e materiais do álbum no GitHub.
 </span>
+
 </a>
 
-<a class="asset" href="assets/logo.png" target="_blank">
-<strong>LOGO</strong>
-<span>
-Identidade visual do projeto.
-</span>
-</a>
+<a
+class="info-card"
+href="https://github.com/32una88/album-sambler/upload/main"
+target="_blank"
 
-<a class="asset" href="audio/">
-<strong>ÁUDIO</strong>
-<span>
-Previews e arquivos musicais.
-</span>
-</a>
+>
 
-<a class="asset" href="artes/">
-<strong>ARTES</strong>
-<span>
-Capas, peças e materiais gráficos.
-</span>
-</a>
+<strong>ENVIAR ARQUIVOS</strong>
 
-<a class="asset" href="docs/">
-<strong>DOCUMENTOS</strong>
 <span>
-Informações e materiais do projeto.
+Adicionar novos áudios, artes ou materiais ao projeto.
 </span>
+
 </a>
 
 </div>
@@ -835,7 +835,12 @@ SAMBLER — TUDO COMEÇA PELO ABANDONO
 
 <div class="player-title" id="playerTitle">—</div>
 
-<audio id="audio" controls preload="none"></audio>
+<audio
+id="audio"
+controls
+preload="none"
+
+> </audio>
 
 </div>
 
